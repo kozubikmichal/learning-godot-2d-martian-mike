@@ -7,6 +7,8 @@ extends CharacterBody2D
 
 @onready var animated_sprite = $AnimatedSprite2D
 
+var active = true
+
 func _physics_process(delta: float) -> void:
 	handle_move(delta)
 	handle_animation()
@@ -15,11 +17,11 @@ func _physics_process(delta: float) -> void:
 func handle_move(delta: float) -> void:
 	if !is_on_floor():
 		velocity.y += min(gravity * delta, 500)
-	else: 
+	elif active: 
 		if Input.is_action_just_pressed("jump"):
 			jump(jump_velocity)
 		
-	var direction = Input.get_axis("move_left", "move_right")
+	var direction = Input.get_axis("move_left", "move_right") if active else 0.0
 	velocity.x = direction * speed
 		
 func handle_animation() -> void:
