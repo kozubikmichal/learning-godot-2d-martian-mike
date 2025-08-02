@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://bvg8hvve5tjqj" path="res://scenes/player.tscn" id="2_w7c3h"]
 [ext_resource type="Texture2D" uid="uid://csniuaooaofhs" path="res://icon.svg" id="3_w8frs"]
 [ext_resource type="PackedScene" uid="uid://sm38bi0w0kse" path="res://scenes/deathzone.tscn" id="4_8iemx"]
-[ext_resource type="PackedScene" path="res://scenes/jump_pad.tscn" id="4_mx8sn"]
+[ext_resource type="PackedScene" uid="uid://dqqtt0al4h0ks" path="res://scenes/jump_pad.tscn" id="4_mx8sn"]
 [ext_resource type="PackedScene" uid="uid://dry33gfq2w55d" path="res://scenes/saw.tscn" id="4_ppgk2"]
 [ext_resource type="PackedScene" uid="uid://6m40op5sd158" path="res://scenes/spike_ball.tscn" id="5_2r41h"]
 [ext_resource type="PackedScene" uid="uid://ipg6n5jysytf" path="res://scenes/tile_map.tscn" id="7_klq6b"]
