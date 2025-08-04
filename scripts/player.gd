@@ -37,4 +37,5 @@ func handle_animation() -> void:
 		animated_sprite.play("fall" if velocity.y > 0 else "jump")
 
 func jump(force: float) -> void:
+	AudioPlayer.play_sfx("jump")
 	velocity.y = -force

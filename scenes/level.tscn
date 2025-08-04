@@ -1,8 +1,9 @@
-[gd_scene load_steps=14 format=3 uid="uid://ls08hq3u7jrx"]
+[gd_scene load_steps=15 format=3 uid="uid://ls08hq3u7jrx"]
 
 [ext_resource type="Script" uid="uid://klpqbxcg6gqo" path="res://scripts/level.gd" id="1_2q6dc"]
 [ext_resource type="PackedScene" uid="uid://cipxg1ngc8w3f" path="res://scenes/level_2.tscn" id="2_t1rx8"]
 [ext_resource type="PackedScene" uid="uid://bvg8hvve5tjqj" path="res://scenes/player.tscn" id="2_w7c3h"]
+[ext_resource type="PackedScene" uid="uid://1uiwt4kh0uve" path="res://scenes/ui_layer.tscn" id="3_64w2a"]
 [ext_resource type="Texture2D" uid="uid://csniuaooaofhs" path="res://icon.svg" id="3_w8frs"]
 [ext_resource type="PackedScene" uid="uid://sm38bi0w0kse" path="res://scenes/deathzone.tscn" id="4_8iemx"]
 [ext_resource type="PackedScene" uid="uid://dqqtt0al4h0ks" path="res://scenes/jump_pad.tscn" id="4_mx8sn"]
@@ -19,6 +20,8 @@ size = Vector2(511, 20)
 [node name="Level" type="Node2D"]
 script = ExtResource("1_2q6dc")
 next_level = ExtResource("2_t1rx8")
+
+[node name="UILayer" parent="." instance=ExtResource("3_64w2a")]
 
 [node name="Ground" type="StaticBody2D" parent="."]
 position = Vector2(138, -75)
