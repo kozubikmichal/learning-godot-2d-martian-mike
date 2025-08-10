@@ -62,6 +62,13 @@ Martian Mike is a classic side-scrolling platformer where you guide Mike through
 
 *Add screenshots of your Martian adventure here*
 
+## TODO
+
+- [ ] Add option to mute music and sfx
+- [ ] Add virtual buttons to support touch devices
+- [ ] Add pause
+- [ ] Keyboard control in main menu
+
 ---
 
 **Ready to explore Mars, Mike?** 🪐✨
