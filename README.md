@@ -68,6 +68,7 @@ Martian Mike is a classic side-scrolling platformer where you guide Mike through
 - [ ] Add virtual buttons to support touch devices
 - [ ] Add pause
 - [ ] Keyboard control in main menu
+- [ ] Button to disable sound
 
 ---
 

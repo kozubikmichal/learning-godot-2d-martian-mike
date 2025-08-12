@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://ls08hq3u7jrx"]
+[gd_scene load_steps=14 format=3 uid="uid://ls08hq3u7jrx"]
 
 [ext_resource type="Script" uid="uid://klpqbxcg6gqo" path="res://scripts/level.gd" id="1_2q6dc"]
 [ext_resource type="PackedScene" uid="uid://cipxg1ngc8w3f" path="res://scenes/level_2.tscn" id="2_t1rx8"]
@@ -12,6 +12,9 @@
 [ext_resource type="PackedScene" uid="uid://dnkis6con4eou" path="res://scenes/bg.tscn" id="8_b121j"]
 [ext_resource type="PackedScene" uid="uid://b5f50avru1yb8" path="res://scenes/start.tscn" id="9_8c41q"]
 [ext_resource type="PackedScene" uid="uid://otlk88wrysup" path="res://scenes/exit.tscn" id="10_olg7q"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_8iemx"]
+font_size = 12
 
 [node name="Level" type="Node2D"]
 script = ExtResource("1_2q6dc")
@@ -50,3 +53,31 @@ position = Vector2(1125, 193)
 
 [node name="Player" parent="." instance=ExtResource("2_w7c3h")]
 position = Vector2(151, 152)
+
+[node name="Texts" type="Node2D" parent="."]
+
+[node name="Movement" type="Label" parent="Texts"]
+offset_left = 20.0
+offset_top = 219.0
+offset_right = 60.0
+offset_bottom = 242.0
+text = "Use left (A) and right (D) keys to move"
+label_settings = SubResource("LabelSettings_8iemx")
+
+[node name="Jump" type="Label" parent="Texts"]
+offset_left = 700.0
+offset_top = 212.0
+offset_right = 894.0
+offset_bottom = 249.0
+text = "Press space to jump"
+label_settings = SubResource("LabelSettings_8iemx")
+
+[node name="Finish" type="Label" parent="Texts"]
+offset_left = 1024.0
+offset_top = 215.0
+offset_right = 1175.0
+offset_bottom = 252.0
+text = "Finish the level in time limit or it will reset"
+label_settings = SubResource("LabelSettings_8iemx")
+horizontal_alignment = 1
+autowrap_mode = 2

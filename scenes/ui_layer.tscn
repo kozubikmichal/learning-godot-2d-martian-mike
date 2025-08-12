@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://1uiwt4kh0uve"]
+[gd_scene load_steps=5 format=3 uid="uid://1uiwt4kh0uve"]
 
 [ext_resource type="Script" uid="uid://bt45tsi6jqa6o" path="res://scripts/ui_layer.gd" id="1_6av8n"]
 [ext_resource type="PackedScene" uid="uid://cq3sabvkj3h6e" path="res://scenes/hud.tscn" id="1_w83ab"]
 [ext_resource type="PackedScene" uid="uid://i7uv0cjw2jry" path="res://scenes/win_screen.tscn" id="3_6syxi"]
+[ext_resource type="FontFile" uid="uid://ce5gnbh5rky2m" path="res://assets/fonts/Kenney Pixel Square.ttf" id="4_6syxi"]
 
 [node name="UILayer" type="CanvasLayer"]
 script = ExtResource("1_6av8n")
@@ -11,3 +12,60 @@ script = ExtResource("1_6av8n")
 
 [node name="WinScreen" parent="." instance=ExtResource("3_6syxi")]
 visible = false
+
+[node name="Controls" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 197.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Left" type="Button" parent="Controls"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 30.0
+offset_top = -60.0
+offset_right = 70.0
+offset_bottom = -20.0
+grow_vertical = 0
+focus_mode = 0
+theme_override_fonts/font = ExtResource("4_6syxi")
+theme_override_font_sizes/font_size = 10
+action_mode = 0
+text = "<"
+
+[node name="Right" type="Button" parent="Controls"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 93.0
+offset_top = -60.0
+offset_right = 133.0
+offset_bottom = -20.0
+grow_vertical = 0
+focus_mode = 0
+theme_override_fonts/font = ExtResource("4_6syxi")
+theme_override_font_sizes/font_size = 10
+action_mode = 0
+text = ">"
+
+[node name="Jump" type="Button" parent="Controls"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 387.0
+offset_top = -60.0
+offset_right = 447.0
+offset_bottom = -20.0
+grow_vertical = 0
+focus_mode = 0
+theme_override_fonts/font = ExtResource("4_6syxi")
+theme_override_font_sizes/font_size = 10
+action_mode = 0
+text = "jump"
